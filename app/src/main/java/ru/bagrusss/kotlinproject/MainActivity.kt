@@ -19,6 +19,12 @@ class MainActivity : AppCompatActivity() {
         handleMenuEvent(event)
     }
 
+    /**
+     * With 1.3.0 when operator ignores statics strings - app shows "Hello, world"
+     * But it works with 1.2.71 and app show "OPTIONS" in the text view, because when
+     * identified type as OPTIONS string
+     */
+
     private fun handleMenuEvent(event: MenuEvent) = event.run {
         when (type) {
             OPTIONS -> showOptions(data as String)
