@@ -20,9 +20,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     /**
-     * With 1.3.0 when operator ignores statics strings - app shows "Hello, world"
+     * With 1.3.0 when operator ignores the same enum values from other enum - app shows "Hello, world"
      * But it works with 1.2.71 and app show "OPTIONS" in the text view, because when
-     * identified type as OPTIONS string
+     * identified type as OPTIONS but from other enum.
      */
 
     private fun handleMenuEvent(event: MenuEvent) = event.run {
